@@ -25,11 +25,11 @@ header {
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
-    border-radius
+    
 }
 
 header > h1 {
-    
+    color: azure;
     margin-bottom: 20px;
     text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.356);
     font-family: var(--fonte-2);
