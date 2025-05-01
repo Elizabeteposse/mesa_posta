@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+
+
+:root {
+    --cor0: rgb(147, 85, 206);
+    --cor1: rgb(236, 133, 149);
+    --cor2: rgb(214, 101, 114);
+
+
+    --fonte-1: "Old Standard TT", serif;
+    --fonte-2:  "Delius Swash Caps", sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: 
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1), var(--cor2) );
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    border-radius
+}
+
+header > h1 {
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.356);
+    font-family: var(--fonte-2);
+}
+
+header > p {
+    color: ghostwhite;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    padding-bottom: 20px;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.356);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  .menu {
+    background-color: var(--cor2); 
+    padding: 5px;
+    font-family: var(--fonte-2);
+  }
+
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+  .menu > ul > li {
+    position: relative;
+    margin-right: 20px;
+    
+}
+
+  .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+    transition-duration: 0.7s;
+    border-radius: 5px;
+    background-color: var(--cor1);
+}
+
+  
+.menu li > ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: var(--cor0);
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+.submenu li {
+    margin: 0;
+    width: 100%;
+}
+
+.menu li:hover > ul.submenu {
+    display: flex;
+}
+
+.submenu a:hover {
+    background-color: rgba(0, 0, 0, 0.288);
+}
+
+footer {
+    background-color: var(--cor1);
+}
